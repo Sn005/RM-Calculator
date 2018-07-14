@@ -7,16 +7,14 @@ storiesOf('organisms/RmResult/RmResultItem', module)
     components: { RmResultItem },
     data () {
       return {
-        rep: 8,
-        maxHeight: 100,
-        ratio: 0.8
+        rm: 10,
+        maxWeight: 100
       }
     },
     template: `
     <rm-result-item
-      :rep="rep"
-      :maxHeight="maxHeight"
-      :ratio="ratio"
+      :rm="rm"
+      :maxWeight="maxWeight"
     />
     `
   }))
