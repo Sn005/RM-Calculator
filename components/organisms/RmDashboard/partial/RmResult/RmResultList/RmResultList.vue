@@ -1,11 +1,12 @@
 <template lang='pug'>
   div
     rm-result-item(
-      v-for="(rm , i) in rmList"
+      v-for="i in rmListLength"
       :key="i"
       :maxWeight="maxWeight"
-      :rm="rm"
+      :rm="i"
     )
+    p {{ maxWeight }}
 </template>
 <script>
 import RmResultItem from '@/components/organisms/RmDashboard/partial/RmResult/RmResultItem/RmResultItem.vue'
@@ -17,8 +18,8 @@ export default {
       type: Number,
       required: true
     },
-    rmList: {
-      type: Array,
+    rmListLength: {
+      type: Number,
       required: true
     }
   }
