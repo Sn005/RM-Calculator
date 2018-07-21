@@ -3,15 +3,19 @@ v-container(
   grid-list-md
   text-xs-center
 )
-  v-flex(
-    v-for="item, i in items"
-    :key="i"
-    xs6
+  v-layout(
+    row
+    wrap
   )
-    slot(
-      name="item"
-      :i="i"
-    ) test
+    v-flex(
+      v-for="item, i in items"
+      :key="i"
+      xs6
+    )
+      slot(
+        name="item"
+        :i="i"
+      ) test
 </template>
 <script>
 export default {
