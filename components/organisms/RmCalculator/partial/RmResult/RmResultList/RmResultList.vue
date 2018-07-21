@@ -1,7 +1,7 @@
 <template lang='pug'>
   div
     rm-result-layout(
-      :items="rmListLength"
+      :items="repsLength"
     )
       rm-result-item(
         slot="item"
@@ -24,7 +24,7 @@ export default {
       type: Number,
       required: true
     },
-    rmListLength: {
+    repsLength: {
       type: Number,
       required: true
     }

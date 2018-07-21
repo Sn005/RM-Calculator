@@ -13,12 +13,12 @@ storiesOf('organisms/RmResult/RmResultList', module)
       components: { RmResultList },
       data () {
         return {
-          rmListLength: 10,
+          repsLength: 10,
           maxWeight: 100,
         }
       },
       template: `
-      <rm-result-list :maxWeight="maxWeight" :rmListLength="rmListLength" />
+      <rm-result-list :maxWeight="maxWeight" :repsLength="repsLength" />
       `
     }
   })

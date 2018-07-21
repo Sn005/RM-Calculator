@@ -1,15 +1,15 @@
 import "vuetify/dist/vuetify.css"
-import { configure } from '@storybook/vue';
+import { configure, addDecorator  } from '@storybook/vue';
 import Vue from 'vue'
 import Vuetify from "vuetify"
 import Decorator from './Decorator.vue'
 
 Vue.use(Vuetify)
 
-// addDecorator((story) => ({
-//   components: { Decorator },
-//   template: '<decorator><story slot="story"></story></decorator>'
-// }))
+addDecorator((story) => ({
+  components: { Decorator },
+  template: '<decorator><story slot="story"></story></decorator>'
+}))
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../components', true, /.stories.js$/);

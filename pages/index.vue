@@ -19,15 +19,18 @@
           class="button--grey">GitHub</a>
       </div>
     </div>
+    <rm-form-select-reps :repsLength="10" ></rm-form-select-reps>
   </section>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import RmFormSelectReps from '~/components/organisms/RmCalculator/partial/RmForm/RmFormSelectReps/RmFormSelectReps.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    RmFormSelectReps
   }
 }
 </script>
