@@ -1,18 +1,24 @@
 <template lang='pug'>
   div
-    rm-result-item(
-      v-for="i in rmListLength"
-      :key="i"
-      :maxWeight="maxWeight"
-      :rm="i"
+    rm-result-layout(
+      :items="rmListLength"
     )
-    p {{ maxWeight }}
+      rm-result-item(
+        slot="item"
+        slot-scope="{ i }"
+        :maxWeight="maxWeight"
+        :rm="i + 1"
+      )
 </template>
 <script>
-import RmResultItem from '@/components/organisms/RmDashboard/partial/RmResult/RmResultItem/RmResultItem.vue'
+import RmResultItem from '../RmResultItem/RmResultItem.vue'
+import RmResultLayout from '../RmResultLayout/RmResultLayout.vue'
 export default {
   name: 'RmResultList',
-  components: {RmResultItem},
+  components: {
+    RmResultItem,
+    RmResultLayout
+  },
   props: {
     maxWeight:{
       type: Number,

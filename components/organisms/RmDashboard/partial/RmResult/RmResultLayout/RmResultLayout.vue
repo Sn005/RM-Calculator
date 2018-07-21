@@ -21,7 +21,8 @@ v-container(
 export default {
   name: 'RmResultLayout',
 	props: {
-  	items: Number
+    items: Number,
+    required: true
   }
  }
 </script>
