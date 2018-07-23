@@ -1,6 +1,15 @@
 <template lang="pug">
-  div.application.theme--light
-    slot(name="story")
+  v-app
+    v-container(
+      fluid
+      grid-list-xl
+    )
+      v-layout(
+        wrap
+        align-center
+      )
+        v-flex(xs12)
+          slot(name="story")
 </template>
 <script>
 export default {
