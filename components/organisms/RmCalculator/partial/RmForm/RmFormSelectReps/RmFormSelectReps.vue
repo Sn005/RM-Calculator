@@ -2,7 +2,7 @@
 div
   v-select(
     :items="reps"
-    label="Standard"
+    label="repを選択してください"
   )
 </template>
 <script>
