@@ -12,7 +12,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 
 
 /* Plugins */
-import nuxt_plugin_vuetify_2f5e942d from 'nuxt_plugin_vuetify_2f5e942d' // Source: ./vuetify.js
+import nuxt_plugin_vuetify_6ef0982d from 'nuxt_plugin_vuetify_6ef0982d' // Source: ./vuetify.js
 
 
 // Component: <no-ssr>
@@ -134,7 +134,7 @@ async function createApp (ssrContext) {
 
   // Plugin execution
   
-  if (typeof nuxt_plugin_vuetify_2f5e942d === 'function') await nuxt_plugin_vuetify_2f5e942d(app.context, inject)
+  if (typeof nuxt_plugin_vuetify_6ef0982d === 'function') await nuxt_plugin_vuetify_6ef0982d(app.context, inject)
   
 
   // If server-side, wait for async component to be resolved first
