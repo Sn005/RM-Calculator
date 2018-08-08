@@ -7,7 +7,7 @@
         slot="item"
         slot-scope="{ i }"
         :maxWeight="maxWeight"
-        :rm="i + 1"
+        :reps="i + 1"
       )
 </template>
 <script>

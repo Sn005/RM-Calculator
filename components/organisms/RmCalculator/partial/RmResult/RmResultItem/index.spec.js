@@ -6,18 +6,18 @@ describe('RmResultItem.vue', () => {
     const props = {
       propsData: {
         maxWeight: 100,
-        rm: 8
+        reps: 8
       }
     }
     const wrapper = mount(RmResultItem, props)
-    console.log(wrapper.vm.ratio)
-    expect(wrapper.vm.ratio).toBe(1.2)
+    console.log(wrapper.reps.ratio)
+    expect(wrapper.reps.ratio).toBe(1.2)
   })
   it('RM計算結果のテスト', () => {
     const props = {
       propsData: {
         maxWeight: 100,
-        rm: 10
+        reps: 10
       }
     }
     const wrapper = mount(RmResultItem, props)
@@ -27,7 +27,7 @@ describe('RmResultItem.vue', () => {
     const props = {
       propsData: {
         maxWeight: 100,
-        rm: 10
+        reps: 10
       }
     }
     const wrapper = mount(RmResultItem, props)

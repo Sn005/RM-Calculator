@@ -11,11 +11,11 @@ storiesOf('organisms/RmResult/RmResultItem', module)
     components: { RmResultItem },
     data () {
       return {
-        rm: 10,
+        reps: 10,
         maxWeight: 100
       }
     },
     template: `
-    <rm-result-item :rm="rm" :maxWeight="maxWeight" />
+    <rm-result-item :reps="reps" :maxWeight="maxWeight" />
     `
   }))
