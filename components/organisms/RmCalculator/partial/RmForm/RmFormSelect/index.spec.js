@@ -1,6 +1,6 @@
 import { mount, createLocalVue } from '@vue/test-utils'
 import Vuetify from 'vuetify'
-import RMFormSelectReps from './RMFormSelectReps.vue'
+import RMFormSelectReps from './Index.vue'
 
 const localVue = createLocalVue()
 localVue.use(Vuetify)

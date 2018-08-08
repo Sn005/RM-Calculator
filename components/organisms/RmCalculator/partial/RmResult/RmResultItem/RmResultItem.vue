@@ -4,6 +4,7 @@
 </template>
 <script>
 import AppTxt from '@/components/atoms/AppTxt/Default.vue'
+import utils from '@/components/organisms/RmCalculator/utils.js'
 export default {
   name: 'RmResultItem',
   components: {
@@ -21,8 +22,7 @@ export default {
   },
   computed: {
     ratio() {
-      if(this.reps === 1) return 1
-      return 1 + (this.reps / 40)
+      return utils.calcRmRatio(this.reps)
     },
     result() {
       const weight = this.maxWeight / this.ratio
