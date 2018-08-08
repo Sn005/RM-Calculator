@@ -2,6 +2,7 @@
   v-text-field(
     :label="placeHolderText"
     :rules="rules"
+    @input="$emit('input', $event.target.value)"
     required
   )
 </template>
