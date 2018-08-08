@@ -1,36 +1,23 @@
 <template>
   <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        nuxt-storybook
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-    <rm-form-select-reps :repsLength="10" ></rm-form-select-reps>
+    parent:{{weight}}<br>
+    <rm-form-input-weight v-model="weight" ></rm-form-input-weight>
   </section>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
-import RmFormSelectReps from '~/components/organisms/RmCalculator/partial/RmForm/RmFormSelectReps/RmFormSelectReps.vue'
+import RmFormInputWeight from '~/components/organisms/RmCalculator/partial/RmForm/RmFormInputWeight/Index.vue'
 
 export default {
+  data() {
+    return {
+      weight: 50
+    }
+  },
   components: {
     AppLogo,
-    RmFormSelectReps
+    RmFormInputWeight
   }
 }
 </script>
