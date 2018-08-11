@@ -6,27 +6,28 @@ const localVue = createLocalVue()
 localVue.use(Vuetify)
 
 describe('RmFormInputWeight.vue', () => {
+  const options = {
+    propsData: {
+      weight: 100
+    },
+    localVue
+  }
   it('mount', () => {
-    const wrapper = shallowMount(RmFormInputWeight, {
-      propsData: {
-        weight: 100
-      },
-      localVue
-    });
+    const wrapper = shallowMount(RmFormInputWeight, options);
 
     expect(wrapper.isVueInstance()).toBe(true);
   })
-  // it('input のイベントハンドラーが設定されているか', () => {
-  //   const wrapper = mount(RmFormInputWeight, {
-  //     propsData: {
-  //       weight: 100
-  //     },
-  //     localVue
-  //   });
-  //   console.log(wrapper)
-  //   const input = wrapper.find('input');
-  //   input.trigger('input');
+  it('basic props', () => {
+    const wrapper = shallowMount(RmFormInputWeight, options);
 
-  //   expect(wrapper.emitted('input')).toHaveLength(1);
-  // });
+    expect(wrapper.vm.weight).toBe(100)
+  })
+  it('change のイベントハンドラーが設定されているか', () => {
+    const dummyNum = 100
+    const wrapper = shallowMount(RmFormInputWeight,options);
+    wrapper.vm.handleInput(dummyNum)
+    expect.assertions(2);
+    expect(wrapper.emitted().change).toBeTruthy()
+    expect(wrapper.emitted().change[0]).toEqual([dummyNum])
+  });
 })
