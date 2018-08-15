@@ -20,6 +20,10 @@ storiesOf(`atoms/Txt`, module)
     components: { AppTxt },
     template: `<app-txt size="l">テキストを表示</app-txt>`
   }))
+  .add('テキスト -XL', () => ({
+    components: { AppTxt },
+    template: `<app-txt size="xl">テキストを表示</app-txt>`
+  }))
   .add('情報テキスト -S', () => ({
     components: { AppInfoTxt },
     template: `<app-info-txt size="s">テキストを表示</app-info-txt>`

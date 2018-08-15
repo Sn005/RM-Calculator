@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-app
+  v-app.decorator
     v-container(
       fluid
       grid-list-xl
@@ -14,5 +14,12 @@
 <script>
 export default {
   name: 'Decorator'
- }
+}
 </script>
+<style lang="scss" scoped>
+.decorator {
+  p {
+    margin: 0;
+  }
+}
+</style>
