@@ -12,14 +12,4 @@ describe('RmResultItem.vue', () => {
     const wrapper = mount(RmResultItem, props)
     expect(wrapper.vm.result).toBe(80)
   })
-  it('snapshotチェック', () => {
-    const props = {
-      propsData: {
-        maxWeight: 100,
-        reps: 10
-      }
-    }
-    const wrapper = mount(RmResultItem, props)
-    expect(wrapper.html()).toMatchSnapshot()
-  })
 })

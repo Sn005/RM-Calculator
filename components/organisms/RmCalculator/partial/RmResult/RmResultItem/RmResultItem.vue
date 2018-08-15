@@ -23,10 +23,7 @@ export default {
   computed: {
     result() {
       const ratio = utils.calcRmRatio(this.reps)
-      const weight = this.maxWeight / ratio
-      // 小数点を含んでいないならば、この時点で返す
-      if(!/\./.test(String(weight)) ) return weight
-      return weight.toFixed(1)
+      return utils.formatWeightByPlate(this.maxWeight / ratio)
     }
   }
 }
