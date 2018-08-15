@@ -11,7 +11,7 @@
       )
 </template>
 <script>
-import RmResultItem from '../RmResultItem/RmResultItem.vue'
+import RmResultItem from '../RmResultItem/Index.vue'
 import RmResultLayout from '../RmResultLayout/RmResultLayout.vue'
 export default {
   name: 'RmResultList',

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import RmResultItem from './RmResultItem.vue'
+import RmResultItem from './Index.vue'
 
 describe('RmResultItem.vue', () => {
   it('RM計算結果のテスト', () => {

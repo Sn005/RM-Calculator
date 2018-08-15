@@ -2,7 +2,7 @@
 import { storiesOf } from '@storybook/vue'
 import VueInfoAddon from 'storybook-addon-vue-info'
 import { withKnobs } from '@storybook/addon-knobs'
-import RmResultItem from './RmResultItem.vue'
+import RmResultItem from './Index.vue'
 
 storiesOf('organisms/RmResult/RmResultItem', module)
   .addDecorator(VueInfoAddon)
