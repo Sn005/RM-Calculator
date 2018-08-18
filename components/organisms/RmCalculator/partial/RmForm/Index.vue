@@ -34,6 +34,10 @@ export default {
       reps: null,
     }
   },
+  model: {
+    prop: 'maxWeight',
+    event: 'change'
+  },
   props: {
     maxWeight: {
       type: Number,
