@@ -7,7 +7,7 @@ rm-form-layout
   app-txt.rm-form__operator(
     slot="center"
     size="xl"
-  ) × {{ result}}
+  ) ×
   rm-form-select(
     slot="right"
     v-model="reps"
@@ -34,10 +34,6 @@ export default {
       reps: null,
     }
   },
-  model: {
-    prop: 'maxWeight',
-    event: 'change'
-  },
   props: {
     maxWeight: {
       type: Number,
@@ -56,7 +52,7 @@ export default {
   },
   watch: {
     result() {
-      if(this.result) this.$emit('change', this.result)
+      if(this.result) this.$emit('update:maxWeight', this.result)
     }
   }
 }

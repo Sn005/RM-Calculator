@@ -1,7 +1,7 @@
 <template lang='pug'>
 div
   rm-form(
-    v-model="maxWeight"
+    :maxWeight.sync="maxWeight"
     :repsLength="repsLength"
   )
   | {{ maxWeight }}
