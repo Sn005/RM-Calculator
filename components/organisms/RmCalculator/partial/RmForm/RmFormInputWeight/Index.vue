@@ -4,6 +4,7 @@ div
     label="重量を入力してください"
     :rules="rules"
     :value="weight"
+    suffix="kg"
     @change="handleInput"
     required
   )

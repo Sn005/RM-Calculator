@@ -11,8 +11,14 @@ storiesOf('organisms/RmForm', module)
     components: { RmForm },
     data () {
       return {
-        repsLength: 10
+        repsLength: 10,
+        maxWeight: 0
       }
     },
-    template: `<rm-form :repsLength="repsLength"/>`
+    template: `<rm-form v-model="maxWeight" :repsLength="repsLength"/>`,
+    watch: {
+      maxWeight() {
+        console.log('maxWeight')
+      }
+    }
   }))

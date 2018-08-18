@@ -2,6 +2,8 @@
 import { storiesOf } from '@storybook/vue'
 import VueInfoAddon from 'storybook-addon-vue-info'
 import { withKnobs } from '@storybook/addon-knobs'
+import { action } from '@storybook/addon-actions'
+
 import RmFormSelect from './Index.vue'
 
 storiesOf('organisms/RmForm/RmFormSelect', module)
@@ -11,8 +13,9 @@ storiesOf('organisms/RmForm/RmFormSelect', module)
     components: { RmFormSelect },
     data () {
       return {
-        repsLength: 10
+        repsLength: 10,
+        reps: 8,
       }
     },
-    template: `<rm-form-select :repsLength="repsLength"/>`
+    template: `<rm-form-select v-model="reps" :repsLength="repsLength"/>`,
   }))

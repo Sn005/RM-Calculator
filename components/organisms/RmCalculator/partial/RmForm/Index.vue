@@ -7,9 +7,10 @@ rm-form-layout
   app-txt.rm-form__operator(
     slot="center"
     size="xl"
-  ) ×
+  ) × {{ result}}
   rm-form-select(
     slot="right"
+    v-model="reps"
     :repsLength="repsLength"
   )
 </template>
@@ -18,6 +19,7 @@ import AppTxt from '@/components/atoms/AppTxt/Default.vue'
 import RmFormLayout from './RmFormLayout/Index.vue'
 import RmFormSelect from './RmFormSelect/Index.vue'
 import RmFormInputWeight from './RmFormInputWeight/Index.vue'
+import utils from '@/components/organisms/RmCalculator/utils.js'
 export default {
   name: 'RmForm',
   components: {
@@ -28,13 +30,29 @@ export default {
   },
   data() {
     return {
-      weight: null
+      weight: null,
+      reps: null,
     }
   },
   props: {
+    maxWeight: {
+      type: Number,
+    },
     repsLength: {
       type: Number,
       required: true
+    }
+  },
+  computed: {
+    result() {
+      if(!this.weight || !this.reps) return 0
+      const ratio = utils.calcRmRatio(this.reps)
+      return utils.formatWeightByPlate(this.weight * ratio)
+    }
+  },
+  watch: {
+    result() {
+      if(this.result) this.$emit('change', this.result)
     }
   }
 }
