@@ -7,27 +7,24 @@ localVue.use(Vuetify)
 
 
 describe('RMFormSelectReps.vue', () => {
+  const options = {
+    propsData: {
+      reps: 10,
+      repsLength: 1
+    },
+    localVue
+  }
   it('渡した数値を元に適切なreps配列が生成されているか', () =>
   {
-    // const props = {
-    //   propsData: {
-    //     repsLength: 1
-    //   }
-    // }
-    const propsData = {
-      repsLength: 1
-    }
-    const wrapper = mount(RMFormSelectReps, {propsData, localVue})
-    expect(wrapper.vm.reps).toContain('1回')
+    const wrapper = mount(RMFormSelectReps, options)
+    expect(wrapper.vm.repsList).toContain(1)
   })
-  // it('snapshotチェック', () => {
-  //   const props = {
-  //     propsData: {
-  //       maxWeight: 100,
-  //       rm: 10
-  //     }
-  //   }
-  //   const wrapper = mount(RmResultItem, props)
-  //   expect(wrapper.html()).toMatchSnapshot()
-  // })
+  it('handleSelectメソッドが正しく機能しているか', () =>
+  {
+    const dummyNum = 5
+    const wrapper = mount(RMFormSelectReps, options)
+    wrapper.vm.handleSelect(dummyNum)
+    expect(wrapper.emitted().change).toBeTruthy()
+    expect(wrapper.emitted().change[0]).toEqual([dummyNum])
+  })
 })
