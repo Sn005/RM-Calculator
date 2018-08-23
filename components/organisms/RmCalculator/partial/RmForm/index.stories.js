@@ -4,7 +4,7 @@ import VueInfoAddon from 'storybook-addon-vue-info'
 import { withKnobs } from '@storybook/addon-knobs'
 import RmForm from './Index.vue'
 
-storiesOf('organisms/RmForm', module)
+storiesOf('organisms/RmCalculator/partial/RmForm', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
   .add('Rep数選択component', () => ({

@@ -3,14 +3,14 @@ import { storiesOf } from '@storybook/vue'
 import VueInfoAddon from 'storybook-addon-vue-info'
 import { withKnobs } from '@storybook/addon-knobs'
 
-import RmResultList from './RmResultList.vue'
+import RmResult from './Index.vue'
 
-storiesOf('organisms/RmResult/RmResultList', module)
+storiesOf('organisms/RmCalculator/partial/RmResult', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
   .add('RM結果一覧', () => {
     return {
-      components: { RmResultList },
+      components: { RmResult },
       data () {
         return {
           repsLength: 10,
@@ -18,7 +18,7 @@ storiesOf('organisms/RmResult/RmResultList', module)
         }
       },
       template: `
-      <rm-result-list :maxWeight="maxWeight" :repsLength="repsLength" />
+      <rm-result :maxWeight="maxWeight" :repsLength="repsLength" />
       `
     }
   })

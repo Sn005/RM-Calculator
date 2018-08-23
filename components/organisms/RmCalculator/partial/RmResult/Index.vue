@@ -12,9 +12,9 @@
 </template>
 <script>
 import RmResultItem from '../RmResultItem/Index.vue'
-import RmResultLayout from '../RmResultLayout/RmResultLayout.vue'
+import RmResultLayout from '../RmResultLayout/Index.vue'
 export default {
-  name: 'RmResultList',
+  name: 'RmResult',
   components: {
     RmResultItem,
     RmResultLayout

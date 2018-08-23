@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/vue'
 import VueInfoAddon from 'storybook-addon-vue-info'
 import { withKnobs } from '@storybook/addon-knobs'
 
-import RmResultLayout from './RmResultLayout.vue'
+import RmResultLayout from './Index.vue'
 
-storiesOf('organisms/RmResult/RmResultLayout', module)
+storiesOf('organisms/RmCalculator/partial//RmResultLayout', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
   .add('RM結果表示レイアウトcomponent', () => ({

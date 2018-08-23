@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions'
 
 import RmFormInputWeight from './Index.vue'
 
-storiesOf('organisms/RmForm/RmFormInputWeight', module)
+storiesOf('organisms/RmCalculator/partial/RmFormInputWeight', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
   .add('重量入力コンポーネント', () => {

@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions'
 
 import RmFormSelect from './Index.vue'
 
-storiesOf('organisms/RmForm/RmFormSelect', module)
+storiesOf('organisms/RmCalculator/partial/RmFormSelect', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
   .add('Rep数選択component', () => ({

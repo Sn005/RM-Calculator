@@ -9,11 +9,10 @@ div
     :maxWeight="maxWeight"
     :repsLength="repsLength"
   )
-  | {{ maxWeight }}
 </template>
 <script>
 import RmForm from './partial/RmForm/Index.vue'
-import RmResult from './partial/RmResult/RmResultList/RmResultList.vue'
+import RmResult from './partial/RmResult/Index.vue'
 import CONSTANT from './constant.js'
 export default {
   name: 'RmCalculator',

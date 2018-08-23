@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue'
 import VueInfoAddon from 'storybook-addon-vue-info'
 import { withKnobs } from '@storybook/addon-knobs'
 import RmFormLayout from './Index.vue'
-storiesOf(`organisms/RmForm/RmFormLayout`, module)
+storiesOf(`organisms/RmCalculator/partial/RmFormLayout`, module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
   .add('RmFormのレイアウト', () => {

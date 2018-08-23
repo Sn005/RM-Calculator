@@ -16,9 +16,9 @@ rm-form-layout
 </template>
 <script>
 import AppTxt from '@/components/atoms/AppTxt/Default.vue'
-import RmFormLayout from './RmFormLayout/Index.vue'
-import RmFormSelect from './RmFormSelect/Index.vue'
-import RmFormInputWeight from './RmFormInputWeight/Index.vue'
+import RmFormLayout from '../RmFormLayout/Index.vue'
+import RmFormSelect from '../RmFormSelect/Index.vue'
+import RmFormInputWeight from '../RmFormInputWeight/Index.vue'
 import utils from '@/components/organisms/RmCalculator/utils.js'
 export default {
   name: 'RmForm',
