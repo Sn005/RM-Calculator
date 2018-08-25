@@ -9,6 +9,12 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     enforce: 'pre',
   })
 
-  defaultConfig.resolve.alias['@'] = rootPath
+  const defaultAlias = defaultConfig.resolve.alias
+  const addAlias = {
+    '@' : path.join(__dirname, rootPath),
+    '@organisms' : path.join(__dirname, 'components/organisms'),
+    '@atoms' : path.join(__dirname, 'components/atoms')
+  }
+  defaultConfig.resolve.alias = Object.assign(defaultAlias, addAlias)
   return defaultConfig
 }
