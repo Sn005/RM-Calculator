@@ -15,7 +15,7 @@ rm-form-layout
   )
 </template>
 <script>
-import AppTxt from '@/components/atoms/AppTxt/Default.vue'
+import AppTxt from '@/components/atoms/AppTxt/Index.vue'
 import RmFormLayout from '../RmFormLayout/Index.vue'
 import RmFormSelect from '../RmFormSelect/Index.vue'
 import RmFormInputWeight from '../RmFormInputWeight/Index.vue'

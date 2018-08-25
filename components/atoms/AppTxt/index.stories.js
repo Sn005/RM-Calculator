@@ -2,7 +2,7 @@
 import { storiesOf } from '@storybook/vue'
 import VueInfoAddon from 'storybook-addon-vue-info'
 import { withKnobs, text, select } from '@storybook/addon-knobs'
-import AppTxt from '@/components/atoms/AppTxt/Default.vue'
+import AppTxt from '@/components/atoms/AppTxt/Index.vue'
 import AppInfoTxt from '@/components/atoms/AppTxt/Info.vue'
 import AppWarningTxt from '@/components/atoms/AppTxt/Warning.vue'
 storiesOf(`atoms/Txt`, module)
