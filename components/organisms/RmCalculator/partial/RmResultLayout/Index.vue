@@ -15,7 +15,7 @@ v-container(
       slot(
         name="item"
         :i="i"
-      ) test
+      ) default
 </template>
 <script>
 export default {
@@ -26,5 +26,4 @@ export default {
   }
  }
 </script>
-<style scoped lang='scss'>
-</style>
+
