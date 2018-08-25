@@ -3,7 +3,7 @@
     dark
     color="teal lighten-3"
   )
-    v-toolbar-title.white--text.title RM計算機
+    v-toolbar-title.white--text.title RM-Calculator
 </template>
 <script>
 export default {
