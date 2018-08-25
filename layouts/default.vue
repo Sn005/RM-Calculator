@@ -3,7 +3,16 @@
     id="app"
   )
     app-header
-    nuxt
+    v-content
+      v-container
+        v-layout(
+          justify-center
+        )
+          v-flex(
+            md8
+            xs12
+          )
+            nuxt
 </template>
 <script>
   import AppHeader from '@organisms/AppHeader/Index.vue'
