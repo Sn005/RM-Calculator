@@ -15,6 +15,5 @@ export default {
   width: 100%;
   margin: 0;
   text-align: center;
-  // color: #fff;
 }
 </style>
