@@ -4,7 +4,7 @@ div
     :items="repsList"
     @change="handleSelect"
     label="repを選択してください"
-    suffix="回"
+    suffix="reps"
     required
   )
 </template>
