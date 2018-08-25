@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -28,6 +30,13 @@ module.exports = {
     ** Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
+      const defaultAlias = config.resolve.alias
+      const addAlias = {
+        '@components' : path.join(__dirname, 'components'),
+        '@organisms' : path.join(__dirname, 'components/organisms'),
+        '@atoms' : path.join(__dirname, 'components/atoms')
+      }
+      config.resolve.alias = Object.assign(defaultAlias, addAlias)
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',

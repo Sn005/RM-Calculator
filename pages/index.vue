@@ -1,13 +1,12 @@
 <template>
   <section class="container">
-    parent:{{weight}}<br>
-    <rm-form-input-weight v-model="weight" ></rm-form-input-weight>
+    parent:{{weight}}
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-import RmFormInputWeight from '~/components/organisms/RmCalculator/partial/RmForm/RmFormInputWeight/Index.vue'
+import AppLogo from '@components/AppLogo.vue'
+
 
 export default {
   data() {
@@ -16,8 +15,7 @@ export default {
     }
   },
   components: {
-    AppLogo,
-    RmFormInputWeight
+    AppLogo
   }
 }
 </script>

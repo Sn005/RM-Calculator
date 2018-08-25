@@ -2,10 +2,17 @@
   v-app(
     id="app"
   )
+    app-header
     nuxt
 </template>
 <script>
-  import AppHeader from '@/components/organisms/AppHeader/Index.vue'
+  import AppHeader from '@organisms/AppHeader/Index.vue'
+  export default {
+    name: 'default',
+    components: {
+      AppHeader
+    }
+  }
 </script>
 <style>
 html {
