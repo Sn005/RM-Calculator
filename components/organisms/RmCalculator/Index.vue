@@ -4,6 +4,9 @@ div
     :maxWeight.sync="maxWeight"
     :repsLength="repsLength"
   )
+  v-divider(
+    v-if="maxWeight"
+  )
   rm-result(
     v-if="maxWeight"
     :maxWeight="maxWeight"

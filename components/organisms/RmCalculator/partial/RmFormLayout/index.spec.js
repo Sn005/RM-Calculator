@@ -6,10 +6,6 @@ const localVue = createLocalVue()
 localVue.use(Vuetify)
 
 describe('RmFormLayout.vue', () => {
-  // it('mount', () => {
-  //   const wrapper = shallowMount(RmFormLayout, {localVue});
-  //   expect(wrapper.isVueInstance()).toBe(true);
-  // })
   it('slotの値が期待通り渡っているか', () => {
     const options = {
       slots: {
