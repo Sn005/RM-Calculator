@@ -10,5 +10,5 @@ export default {
 </script>
 <style scoped lang='scss'>
 @import "./style.scss";
-// .state { color: $color-warning; }
+.state { color: #F44336; }
 </style>
