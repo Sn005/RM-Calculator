@@ -10,6 +10,10 @@ yarn-error.log*
 selenium-debug.log
 *__snapshots__/
 
+# Nuxt build
+.nuxt
+
+
 # Editor directories and files
 .idea
 .vscode
