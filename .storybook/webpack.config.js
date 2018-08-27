@@ -8,13 +8,8 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     loaders: [require.resolve('@storybook/addon-storysource/loader')],
     enforce: 'pre',
   })
-
-  const defaultAlias = defaultConfig.resolve.alias
-  const addAlias = {
-    '@' : path.join(__dirname, rootPath),
-    '@organisms' : path.join(__dirname, 'components/organisms'),
-    '@atoms' : path.join(__dirname, 'components/atoms')
-  }
-  defaultConfig.resolve.alias = Object.assign(defaultAlias, addAlias)
+  defaultConfig.resolve.alias['@'] = rootPath
+  defaultConfig.resolve.alias['@organisms'] =  path.join(__dirname, 'components/organisms')
+  defaultConfig.resolve.alias['@atoms'] = path.join(__dirname, 'components/atoms')
   return defaultConfig
 }
