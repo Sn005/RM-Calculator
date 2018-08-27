@@ -12,7 +12,9 @@ module.exports = {
   ],
   moduleNameMapper: {
     "^vue$": "vue/dist/vue.common.js",
-    "^@/(.*)$": "<rootDir>/$1"
+    "^@/(.*)$": "<rootDir>/$1",
+    "^@organisms/(.*)$": "<rootDir>/components/organisms/$1",
+    "^@atoms/(.*)$": "<rootDir>/components/atoms/$1",
   },
   transform: {
     "^.+\\.js$": "<rootDir>/node_modules/babel-jest",

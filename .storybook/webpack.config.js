@@ -1,5 +1,4 @@
 const path = require('path');
-const rootPath = path.resolve(__dirname, '../')
 
 module.exports = (storybookBaseConfig, configType, defaultConfig) => {
 
@@ -8,8 +7,8 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     loaders: [require.resolve('@storybook/addon-storysource/loader')],
     enforce: 'pre',
   })
-  defaultConfig.resolve.alias['@'] = rootPath
-  defaultConfig.resolve.alias['@organisms'] =  path.join(__dirname, 'components/organisms')
-  defaultConfig.resolve.alias['@atoms'] = path.join(__dirname, 'components/atoms')
+  defaultConfig.resolve.alias['@'] = path.resolve(__dirname, '../')
+  defaultConfig.resolve.alias['@organisms'] =  path.join(__dirname, '../components/organisms')
+  defaultConfig.resolve.alias['@atoms'] = path.join(__dirname, '../components/atoms')
   return defaultConfig
 }

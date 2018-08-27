@@ -11,8 +11,8 @@
       )
 </template>
 <script>
-import RmResultItem from '../RmResultItem/Index.vue'
-import RmResultLayout from '../RmResultLayout/Index.vue'
+import RmResultItem from '@organisms/RmCalculator/partial/RmResultItem/Index.vue'
+import RmResultLayout from '@organisms/RmCalculator/partial/RmResultLayout/Index.vue'
 export default {
   name: 'RmResult',
   components: {

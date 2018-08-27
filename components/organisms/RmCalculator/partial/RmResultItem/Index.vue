@@ -3,8 +3,8 @@
     app-txt(size="l") {{ reps }}REPS: {{ result }}kg
 </template>
 <script>
-import AppTxt from '@/components/atoms/AppTxt/Index.vue'
-import utils from '@/components/organisms/RmCalculator/utils.js'
+import AppTxt from '@atoms/AppTxt/Index.vue'
+import utils from '@organisms/RmCalculator/utils.js'
 export default {
   name: 'RmResultItem',
   components: {

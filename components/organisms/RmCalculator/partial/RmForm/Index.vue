@@ -15,11 +15,12 @@ rm-form-layout
   )
 </template>
 <script>
-import AppTxt from '@/components/atoms/AppTxt/Index.vue'
-import RmFormLayout from '../RmFormLayout/Index.vue'
-import RmFormSelect from '../RmFormSelect/Index.vue'
-import RmFormInputWeight from '../RmFormInputWeight/Index.vue'
-import utils from '@/components/organisms/RmCalculator/utils.js'
+import AppTxt from '@atoms/AppTxt/Index.vue'
+import RmFormLayout from '@organisms/RmCalculator/partial/RmFormLayout/Index.vue'
+import RmFormSelect from '@organisms/RmCalculator/partial/RmFormSelect/Index.vue'
+import RmFormInputWeight from '@organisms/RmCalculator/partial/RmFormInputWeight/Index.vue'
+
+import utils from '@organisms/RmCalculator/utils.js'
 export default {
   name: 'RmForm',
   components: {
