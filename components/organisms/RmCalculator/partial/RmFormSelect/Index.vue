@@ -12,10 +12,6 @@ div
 
 export default {
   name: 'RmFormSelectReps',
-  model: {
-    prop: 'reps',
-    event: 'change'
-  },
   props:{
     reps: {
       type: Number
@@ -32,7 +28,7 @@ export default {
   },
   methods: {
     handleSelect(val) {
-      this.$emit('change', Number(val))
+      this.$emit('update:reps', Number(val))
     }
   }
 }

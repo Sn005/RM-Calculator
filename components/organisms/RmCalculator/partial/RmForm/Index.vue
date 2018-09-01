@@ -2,7 +2,7 @@
 rm-form-layout
   rm-form-input-weight(
     slot="left"
-    v-model="weight"
+    :weight.sync="weight"
   )
   app-txt.rm-form__operator(
     slot="center"
@@ -10,7 +10,7 @@ rm-form-layout
   ) ×
   rm-form-select(
     slot="right"
-    v-model="reps"
+    :reps.sync="reps"
     :repsLength="repsLength"
   )
 </template>

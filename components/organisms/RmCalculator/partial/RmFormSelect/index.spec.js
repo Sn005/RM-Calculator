@@ -24,7 +24,7 @@ describe('RMFormSelectReps.vue', () => {
     const dummyNum = 5
     const wrapper = mount(RMFormSelectReps, options)
     wrapper.vm.handleSelect(dummyNum)
-    expect(wrapper.emitted().change).toBeTruthy()
-    expect(wrapper.emitted().change[0]).toEqual([dummyNum])
+    expect(wrapper.emitted()['update:reps']).toBeTruthy()
+    expect(wrapper.emitted()['update:reps'][0]).toEqual([dummyNum])
   })
 })

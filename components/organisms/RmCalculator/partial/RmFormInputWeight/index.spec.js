@@ -27,7 +27,7 @@ describe('RmFormInputWeight.vue', () => {
     const wrapper = shallowMount(RmFormInputWeight,options);
     wrapper.vm.handleInput(dummyNum)
     expect.assertions(2);
-    expect(wrapper.emitted().change).toBeTruthy()
-    expect(wrapper.emitted().change[0]).toEqual([dummyNum])
+    expect(wrapper.emitted()['update:weight']).toBeTruthy()
+    expect(wrapper.emitted()[['update:weight']][0]).toEqual([dummyNum])
   });
 })

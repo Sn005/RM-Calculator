@@ -12,10 +12,6 @@ div
 <script>
 export default {
   name: "RmFormInputWeight",
-  model: {
-    prop: 'weight',
-    event: 'change'
-  },
   props:{
     weight: {
       type: Number
@@ -31,7 +27,7 @@ export default {
   },
   methods: {
     handleInput(val) {
-      this.$emit('change', Number(val))
+      this.$emit('update:weight', Number(val))
     }
   }
 }
