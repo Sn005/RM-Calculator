@@ -7,19 +7,22 @@
       wrap
     )
       v-flex(
-        xs5
+        xs12
+        md5
       )
         slot(
           name="left"
         ) left-contents
       v-flex(
-        xs2
+        xs12
+        md2
       )
         slot(
           name="center"
         ) center-contents
       v-flex(
-        xs5
+        xs1xs120
+        md5
       )
         slot(
           name="right"
