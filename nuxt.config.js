@@ -20,8 +20,16 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   modules: [
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/pwa'
   ],
+  manifest: {
+    name: "RM-Calculator",
+    lang: 'ja'
+  },
+  workbox: {
+    dev: true
+  },
   /*
   ** Build configuration
   */

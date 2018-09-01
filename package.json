@@ -17,6 +17,7 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^2.4.0",
     "@nuxtjs/vuetify": "^0.4.2",
     "nuxt": "^1.0.0"
   },
