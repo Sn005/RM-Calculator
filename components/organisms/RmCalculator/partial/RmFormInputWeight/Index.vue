@@ -6,6 +6,8 @@ div
     :value="weight"
     suffix="kg"
     @change="handleInput"
+    type="number"
+    step="0.1"
     required
   )
 </template>
