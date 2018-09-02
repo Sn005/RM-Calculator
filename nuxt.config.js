@@ -21,7 +21,10 @@ module.exports = {
   loading: { color: '#3B8070' },
   modules: [
     '@nuxtjs/vuetify',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-125045597-1'
+    }]
   ],
   manifest: {
     name: "RM-Calculator",
