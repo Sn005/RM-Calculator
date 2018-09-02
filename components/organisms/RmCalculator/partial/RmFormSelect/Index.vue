@@ -3,7 +3,7 @@ div
   v-select(
     :items="repsList"
     @change="handleSelect"
-    label="repを選択してください"
+    label="repsを選択してください"
     suffix="reps"
     required
   )
